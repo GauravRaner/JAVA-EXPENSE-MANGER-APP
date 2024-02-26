@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ADD INCOME</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<body>
+<div align="center" style="border: 1px solid blue;width:400px;margin:10px auto;padding: 10px" >
+<h2>EXPENSE MANAGER</h2>
+<form action="addIncome" method="post">
+<label>ENTER INCOME</label><br>
+<input type="text" name="incomeAmount" class="btn btn-light border border-primary"><br><br>
+<label>SELECT CATEGORY</label><br>
+<select name="incomeCategory" class="btn btn-light border border-primary">
+<option name="incomeCategory" value="allowance" class="dropdown-item">ALLOWANCE</option>
+<option name="incomeCategory" value="bonus" >BONUS</option>
+<option name="incomeCategory" value="business" >BUSINESS</option>
+<option name="incomeCategory" value="pension" >PENSION</option>
+<option name="incomeCategory" value="salary" >SALARY</option>
+<option name="incomeCategory" value="other" >OTHER</option>
+</select><br><br>
+<label>SELECT INCOME TYPE</label><br>
+<input type="radio" name="incomeType" value="bank"  class="form-check-input">BANK 
+<input type="radio" name="incomeType" value="cash">CASH <br>
+<input type="radio" name="incomeType" value="card">CARD 
+<input type="radio" name="incomeType" value="other">OTHER
+<br><br>
+<input type="text" placeholder="Notes" name="incomeNote" class="btn btn-light border border-primary"><br><br>
+<label>SELECT DATE AND TIME</label><br>
+<input type="date" name="incomeDate" class="btn btn-light border border-primary">
+<input type="time" name="incomeTime" class="btn btn-light border border-primary"><br><br>
+
+<input type="submit" value="save"  class="btn btn-success">
+
+
+</form>
+
+</div>
+
+</body>
+</html>
