@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ADD INCOME</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<body>
+<div align="center" style="border: 1px solid blue;width:400px;margin:10px auto;padding: 10px" >
+<h2>EXPENSE MANAGER</h2>
+<form action="addExpense" method="post">
+<label>ENTER EXPENSE</label><br>
+<input type="text" name="expenseAmount" class="btn btn-light border border-primary"><br><br>
+<label>SELECT CATEGORY</label><br>
+<select name="expenseCategory" class="btn btn-light border border-primary">
+<option name="expenseCategory" value="GROCERY" class="dropdown-item">GROCERY</option>
+<option name="expenseCategory" value="MOBILE RECHARGE" >MOBILE RECHARGE</option>
+<option name="expenseCategory" value="PETROL" >PETROL</option>
+<option name="expenseCategory" value="P.G. RENT" >P.G. RENT</option>
+<option name="expenseCategory" value="MESS" >MESS</option>
+<option name="expenseCategory" value="STATIONARY" >STATIONARY</option>
+<option name="expenseCategory" value="OTHER" >OTHER</option>
+
+</select><br><br>
+<label>SELECT EXPENSE TYPE</label><br>
+<input type="radio" name="expenseType" value="bank"  class="form-check-input">BANK 
+<input type="radio" name="expenseType" value="cash">CASH <br>
+<input type="radio" name="expenseType" value="card">CARD 
+<input type="radio" name="expenseType" value="other">OTHER
+<br><br>
+<input type="text" placeholder="Notes" name="expenseNote" class="btn btn-light border border-primary"><br><br>
+<label>SELECT DATE AND TIME</label><br>
+<input type="date" name="expenseDate" class="btn btn-light border border-primary">
+<input type="time" name="expenseTime" class="btn btn-light border border-primary"><br><br>
+
+<input type="submit" value="save"  class="btn btn-danger">
+
+
+</form>
+
+</div>
+
+</body>
+</html>
