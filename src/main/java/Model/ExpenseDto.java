@@ -12,6 +12,8 @@ public class ExpenseDto {
 	private double totalIncome;
 	private double totalExpense;
 	private double balance;
+	private String startPoint;
+	private String endPoint;
 	
 	public ExpenseDto() {
 		
@@ -82,6 +84,19 @@ public class ExpenseDto {
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
+	public String getStartPoint() {
+		return startPoint;
+	}
+	public void setStartPoint(String startPoint) {
+		this.startPoint = startPoint;
+	}
+	public String getEndPoint() {
+		return endPoint;
+	}
+	public void setEndPoint(String endPoint) {
+		this.endPoint = endPoint;
+	}
+	
 	
 	
 

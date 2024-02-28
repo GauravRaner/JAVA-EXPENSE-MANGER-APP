@@ -2,16 +2,16 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>ADD INCOME</title>
+<title>ADD EXPENSE</title>
 </head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-<body>
-<div align="center" style="border: 1px solid blue;width:400px;margin:10px auto;padding: 10px" >
-<h2>EXPENSE MANAGER</h2>
-<form action="addExpense" method="post">
-<label>ENTER EXPENSE</label><br>
-<input type="text" name="expenseAmount" class="btn btn-light border border-primary"><br><br>
+<body style="background-color: #e3d5ca">
+<div  align="center" style="border: 1px solid blue; width: 400px; margin: 20px auto; padding: 20px;background-color: #a4c3b2">
+<h3 style="font-size: 25px">EXPENSE MANAGER</h3>
+<form action="addExpense" method="post" style="padding-top: 20px">
+<label >ENTER EXPENSE</label><br>
+<input type="text" name="expenseAmount" placeholder="Enter expense amount" class="btn btn-light border border-primary" ><br>
 <label>SELECT CATEGORY</label><br>
 <select name="expenseCategory" class="btn btn-light border border-primary">
 <option name="expenseCategory" value="GROCERY" class="dropdown-item">GROCERY</option>
@@ -23,9 +23,9 @@
 <option name="expenseCategory" value="OTHER" >OTHER</option>
 
 </select><br><br>
-<label>SELECT EXPENSE TYPE</label><br>
+<label>MODE OF TRANSACTION</label><br>
 <input type="radio" name="expenseType" value="bank"  class="form-check-input">BANK 
-<input type="radio" name="expenseType" value="cash">CASH <br>
+<input type="radio" name="expenseType" value="cash">CASH 
 <input type="radio" name="expenseType" value="card">CARD 
 <input type="radio" name="expenseType" value="other">OTHER
 <br><br>
